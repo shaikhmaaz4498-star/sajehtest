@@ -1,0 +1,216 @@
+/* NAVBAR */
+.plp-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 20px;
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .search-bar input {
+        width: 100%;
+    }
+}
+
+.plp-header .logo img {
+    width: 120px;
+}
+
+.search-bar input {
+    width: 280px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+
+
+.navbar ul li.contact {
+    margin-right: 60px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+
+.cart-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background: #fff;
+    padding: 5px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+}
+
+/* FILTERS */
+.filters {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 15px 40px;
+    background: #faf7f4;
+}
+
+.filters select {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #c7c7c7;
+    font-family: "Roboto Condensed", sans-serif;
+    width: 145px;
+    background: #fff;
+}
+
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+    .filters select {
+        width: 100%;
+    }
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* space between cards */
+    padding: 20px 40px;
+}
+
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+}
+
+
+.product-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition:  ease 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    color: #333;
+}
+
+nav .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+
+
+.filters select {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+
+
+.filters select:hover {
+    border-color: #000;
+}
+
+.filters label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #444;
+}
+
+
+
+.back-icon {
+    position: fixed;
+    top: 120px; /* moved down so it doesn't cover logo */
+    left: 0px;
+    font-size: 22px;
+    cursor: pointer;
+    background: white;
+    border-radius: 50%;
+    padding: 8px 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    z-index: 999;
+    font-family: Arial, sans-serif;
+}
+.back-icon:hover {
+    background: #f3f3f3;
+}
+
+
+
+
+

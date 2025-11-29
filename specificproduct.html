@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAJEH | Product</title>
+    <link rel="stylesheet" href="specificproduct.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500&family=Amita&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="logo/logo_sample-removebg-preview.png" alt="Sajeh Logo">
+        </div>
+
+        <nav class="nav">
+            <a href="/Sajeh.html">Home</a>
+            <a href="/productlisting.html">Collections ▾</a>
+            <a href="#">Our Story</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="right-menu">
+            <input type="text" placeholder="Search" class="search-box">
+            <a href="#" class="signin">Sign In / Sign Up</a>
+            <a href="#" class="cart">🛒</a>
+        </div>
+    </header>
+
+<!-- PRODUCT WRAPPER -->
+<section class="product-container">
+
+    <!-- LEFT SIDE IMAGES -->
+    <div class="product-images">
+        <img id="mainImage" class="main-image" src="banner/sajeh3.jpg" alt="Product Image">
+
+        <div class="thumbnails">
+            <img src="banner/con2.jpg" onclick="changeImage(this.src)">
+            <img src="banner/con3.jpg" onclick="changeImage(this.src)">
+            <img src="banner/sajeh 1.jpg" onclick="changeImage(this.src)">
+        </div>
+    </div>
+
+    <!-- RIGHT SIDE PRODUCT INFO -->
+    <div class="product-info">
+
+        <input type="hidden" id="productId" value="1">
+
+        <h1 class="product-name">Luxury Beige Hijab</h1>
+        <p class="product-price">₹499</p>
+
+        <div class="product-option">
+            <label>Color:</label>
+            <select id="color">
+                <option>Beige</option>
+                <option>Black</option>
+                <option>Brown</option>
+            </select>
+        </div>
+
+        <div class="product-option">
+            <label>Size:</label>
+            <select id="size">
+                <option>Free Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+            </select>
+        </div>
+
+        <div class="product-option">
+            <label>Quantity:</label>
+            <input id="qty" type="number" value="1" min="1">
+        </div>
+
+        <button class="add-to-cart">Add To Cart</button>
+
+        <hr>
+
+        <h3>Description</h3>
+        <p class="product-description">
+            This luxury beige hijab is made from premium soft-touch fabric.
+            Lightweight, breathable, and perfect for everyday wear.
+        </p>
+
+        <h3>Product Details</h3>
+        <ul class="product-details">
+            <li>Material: Soft Cotton Blend</li>
+            <li>Length: 180 cm</li>
+            <li>Lightweight Fabric</li>
+            <li>Suitable for Daily and Occasion Wear</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<script>
+    function changeImage(src) {
+        document.getElementById("mainImage").src = src;
+    }
+</script>
+
+<script src="productlisting.js"></script>
+
+</body>
+</html>

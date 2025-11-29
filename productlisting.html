@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAJEH | Collections</title>
+    <link rel="stylesheet" href="productlisting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500&family=Amita&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="plp-header">
+
+        <div class="logo">
+            <img src="logo/logo_sample-removebg-preview.png" alt="SAJEH">
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="/Sajeh.html">Home</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Collection ▼</a>
+                    <div class="dropdown-menu">
+                        <a href="#">Hijabs</a>
+                        <a href="#">Abayas</a>
+                        <a href="#">Jewellery</a>
+                    </div>
+                </li>
+
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Sign Out</a></li>
+
+                <li><a href="#" class="cart-icon">🛒</a></li>
+            </ul>
+        </nav>
+        <div class="back-icon" onclick="history.back()">←</div>
+
+    </header>
+
+    <!-- FILTERS -->
+     <div class="back-icon" onclick="history.back()">←</div>
+
+    <section class="filters">
+        <select id="sort">
+            <option value="">Sort By</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+        </select>
+
+        <select>
+            <option>Category</option>
+            <option>Hijabs</option>
+            <option>Abayas</option>
+            <option>Jewellery</option>
+        </select>
+
+        <select>
+            <option>Color</option>
+            <option>Black</option>
+            <option>Brown</option>
+            <option>White</option>
+        </select>
+
+        <select>
+            <option>Price</option>
+            <option>Under 199</option>
+            <option>Under 299</option>
+            <option>Under 399</option>
+            <option>Under 499</option>
+        </select>
+
+        <select>
+            <option>Rating</option>
+            <option>4 Stars+</option>
+            <option>3 Stars+</option>
+        </select>
+
+        <select>
+            <option>Discount</option>
+            <option>10% Off</option>
+            <option>20% Off</option>
+        </select>
+    </section>
+
+    <!-- PRODUCT GRID -->
+    <section class="product-grid">
+
+        <a href="specificproduct.html" class="product-card"
+           data-category="Hijabs" data-color="Black" data-price="199" data-rating="4" data-discount="10">
+            <img src="banner/con2.jpg" alt="Product 1">
+            <h3>Elegant Hijab</h3>
+            <p>₹199</p>
+        </a>
+
+        <a href="specificproduct.html" class="product-card"
+           data-category="Abayas" data-color="Brown" data-price="299" data-rating="4" data-discount="20">
+            <img src="banner/con3.jpg" alt="Product 2">
+            <h3>Classic Abaya</h3>
+            <p>₹299</p>
+        </a>
+
+        <a href="specificproduct.html" class="product-card"
+           data-category="Jewellery" data-color="White" data-price="149" data-rating="4" data-discount="10">
+            <img src="banner/con4.jpg" alt="Product 3">
+            <h3>Gold Necklace</h3>
+            <p>₹149</p>
+        </a>
+
+        <a href="specificproduct.html" class="product-card"
+           data-category="Hijabs" data-color="Black" data-price="179" data-rating="3" data-discount="0">
+            <img src="banner/sajeh 1.jpg" alt="Product 4">
+            <h3>Silk Hijab</h3>
+            <p>₹179</p>
+        </a>
+
+        <a href="specificproduct.html" class="product-card"
+           data-category="Abayas" data-color="Brown" data-price="329" data-rating="4" data-discount="15">
+            <img src="banner/sajeh 1.jpg" alt="Product 5">
+            <h3>Modern Abaya</h3>
+            <p>₹329</p>
+        </a>
+
+        <a href="specificproduct.html" class="product-card"
+           data-category="Jewellery" data-color="White" data-price="89" data-rating="3" data-discount="5">
+            <img src="banner/sajeh2.jpg" alt="Product 6">
+            <h3>Silver Earrings</h3>
+            <p>₹89</p>
+        </a>
+
+        <a href="specificproduct.html" class="product-card"
+           data-category="Hijabs" data-color="Black" data-price="159" data-rating="4" data-discount="10">
+            <img src="banner/sajeh3.jpg" alt="Product 7">
+            <h3>Casual Hijab</h3>
+            <p>₹159</p>
+        </a>
+
+        <a href="specificproduct.html" class="product-card"
+           data-category="Abayas" data-color="Brown" data-price="399" data-rating="4" data-discount="10">
+            <img src="banner/sajeh4.jpg" alt="Product 8">
+            <h3>Designer Abaya</h3>
+            <p>₹399</p>
+        </a>
+
+    </section>
+<script src="productlisting.js"></script>
+</body>
+</html>
